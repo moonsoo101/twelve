@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.wisebody.twelve">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Login"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".player.LimitPlay"/>
+        <activity android:name=".PagerMenu.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize"></activity>
+        <activity android:name=".Join"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"></activity>
+        <activity android:name=".NonAuthor"
+        android:screenOrientation="portrait"
+        android:windowSoftInputMode="adjustResize"></activity>
+        <activity android:name=".Record"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Agree"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Authorization"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Subtitle"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".starJoin"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".WriteSubtitle"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden"></activity>
+  <!--      <activity
+            android:name=".Service"
+            android:label="Golden 12"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
+        </activity>-->
+        <activity android:name=".WritePost"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".Dialog_Authorization"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog"
+            android:screenOrientation="portrait">
+        </activity>
+    </application>
+
+
+</manifest>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/frame">
+   <SurfaceView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/surface"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5.3sp"
+        android:layout_marginTop="15.3sp"
+        android:id="@+id/option">
+        <Button
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:id="@+id/frontback"
+            android:background="@drawable/icn_camera_front"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:id="@+id/touchmode"
+            android:text="터치모드"/>
+        <Button
+            android:layout_width="17dip"
+            android:layout_height="18.8dip"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/icn_camera_flash"
+            android:id="@+id/flash" />
+        
+    </LinearLayout>
+
+    <com.example.wisebody.twelve.widget.ProgressCircle
+        android:id="@+id/circularProgressbar"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="11.3dp"
+        android:layout_gravity="bottom|center_horizontal"
+        app:progressColor="#a8a1fb"
+        app:incompleteProgressColor="#37326b"
+        app:strokeWidth="8dp"/>
+
+    <Button
+        android:id="@+id/progressBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:textSize="15sp"
+        android:textColor="#ffffff"
+        android:background="@drawable/oval_b"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="22dp"/>
+</FrameLayout>

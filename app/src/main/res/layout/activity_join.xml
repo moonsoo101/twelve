@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:id="@+id/mainLayout"
+    android:background="@android:color/white">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/img2">
+    </ImageView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollcontainer"
+        android:layout_centerInParent="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:id = "@+id/edit_id"
+            android:layout_width = "279.3dp"
+            android:layout_height = "wrap_content"
+            android:inputType="textEmailAddress"
+            android:layout_centerHorizontal="true"
+            android:singleLine="true"
+            android:textCursorDrawable="@null"
+            android:drawableLeft="@drawable/icn_mail_pp"
+            android:drawablePadding="@dimen/activity_horizontal_margin"
+            android:hint = "Email을 입력해주세요"
+            android:textColor="#282455"
+            android:textColorHint="#bbbad0"
+            android:textSize="12sp"
+            android:selectAllOnFocus="true"/>
+        <EditText
+            android:id = "@+id/edit_pass"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="42.8dp"
+            android:layout_width = "279.3dp"
+            android:inputType="textPassword"
+            android:textCursorDrawable="@null"
+            android:layout_height = "wrap_content"
+            android:singleLine="true"
+            android:maxLength="12"
+            android:drawablePadding="@dimen/activity_horizontal_margin"
+            android:drawableLeft="@drawable/icn_pw_pp"
+            android:hint = "Password를 입력해주세요"
+            android:textColor="#282455"
+            android:textColorHint="#bbbad0"
+            android:textSize="12sp"
+            android:selectAllOnFocus="true"/>
+    <EditText
+        android:id = "@+id/edit_repass"
+        android:layout_below="@+id/edit_pass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42.8dp"
+        android:layout_width = "279.3dp"
+        android:inputType="textPassword"
+        android:layout_height = "wrap_content"
+        android:singleLine="true"
+        android:textCursorDrawable="@null"
+        android:maxLength="12"
+        android:imeOptions="actionDone"
+        android:drawablePadding="@dimen/activity_horizontal_margin"
+        android:drawableLeft="@drawable/icn_pw_pp"
+        android:hint = "Password를 다시 한 번 더 입력해주세요"
+        android:textColor="#282455"
+        android:textColorHint="#bbbad0"
+        android:textSize="12sp"
+        android:selectAllOnFocus="true"/>
+        </RelativeLayout>
+    </ScrollView>
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="#837af1"
+          android:layout_alignParentBottom="true">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:onClick="Back"
+            android:text="이전"
+            android:background="#837af1"
+            android:textColor="@android:color/white"
+            android:drawableLeft="@drawable/btn_back_active">
+        </Button>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:onClick="Next"
+            android:text="다음"
+            android:background="#837af1"
+            android:textColor="@android:color/white"
+            android:drawableRight="@drawable/btn_next_active">
+        </Button>
+  </RelativeLayout>
+  </RelativeLayout>
