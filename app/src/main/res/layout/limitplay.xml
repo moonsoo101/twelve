@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/menucontainer"
+        android:background="#ffffff">
+        <Button
+            android:layout_width="20.6dip"
+            android:layout_height="20.6dip"
+            android:layout_gravity="center"
+            android:id="@+id/edit_sub"
+            android:background="@drawable/icn_edit"/>
+        
+        </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/videocontainer"
+        android:layout_above="@+id/menucontainer">
+        <com.devbrackets.android.exomedia.ui.widget.EMVideoView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/video"></com.devbrackets.android.exomedia.ui.widget.EMVideoView>
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressbar"
+            android:layout_gravity="center"/>
+        <Button
+            android:layout_width="55dip"
+            android:layout_height="70dip"
+            android:id="@+id/play"
+            android:background="@drawable/bigplay"
+            android:layout_gravity="center"/>
+        <Button
+            android:layout_width="60dip"
+            android:layout_height="70dip"
+            android:id="@+id/pause"
+            android:background="@drawable/bigpause"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="81.6sp"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17.1sp"
+        android:layout_gravity="center">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:id="@+id/mystarImage" />
+    </FrameLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="10.6sp"
+        android:id="@+id/nickname"
+        android:layout_marginTop="8.2sp"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>

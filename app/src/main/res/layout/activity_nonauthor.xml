@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+            <com.devbrackets.android.exomedia.ui.widget.EMVideoView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/preview"></com.devbrackets.android.exomedia.ui.widget.EMVideoView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#9ccc64de"/>
+        <Button
+            android:layout_width="19dip"
+            android:layout_height="13dip"
+            android:id="@+id/recordbtn"
+            android:layout_gravity="right"
+            android:layout_marginTop="29dip"
+            android:layout_marginRight="18dip"
+            android:background="@drawable/icn_main_mov"/>
+        <ProgressBar
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:id="@+id/loading"
+            android:layout_gravity="center"/>
+        <Button
+            android:id="@+id/playbtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="193.3sp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/btn_main_play" />
+        <!--android:layout_marginTop="193.3dp"-->
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="195dp"
+            android:layout_height="73dp"
+            android:layout_gravity="left|bottom"
+            android:layout_marginBottom="176.5dp"
+            android:layout_marginLeft="15.8dp"
+            android:layout_marginRight="93dp"
+            android:layout_marginTop="383.3dp"
+            android:textColor="#fafafa"
+            android:gravity="top"
+            android:textSize="27sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/yes"
+            android:textSize="11.3sp"
+            android:textColor="#fafafa"
+            android:text="YES"
+            android:layout_marginLeft="15.8dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="156dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:id="@+id/countdown"
+            android:textSize="15sp"
+            android:textColor="#fcef53"
+            android:layout_gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52.5dp"
+            android:id="@+id/title"
+            android:textSize="10sp"
+            android:textColor="#ffffff"
+            android:text="시간이 얼마 남지 않았습니다.\n당신의 팬들에게 도움을 요청 하세요!"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:layout_marginLeft="14.5dp"
+            android:layout_marginRight="14.5dp"
+            android:layout_marginBottom="132.8dp"
+            android:background = "#eeeeee"
+            android:layout_gravity="center_horizontal|bottom"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="47.3dp"
+            android:layout_marginLeft="14.5dp"
+            android:layout_marginRight="14.3dp"
+            android:layout_marginBottom="60sp"
+            android:background="#6d64de"
+            android:layout_gravity="bottom"
+            android:textSize="15sp"
+            android:textColor="#fafafa"
+            android:text="나는 스타가 맞아요!"
+            android:id="@+id/yesbtn"/>
+    </FrameLayout>
+
+</RelativeLayout>

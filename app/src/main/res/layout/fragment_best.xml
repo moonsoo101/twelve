@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".PagerMenu.MainActivity"
+    android:id="@+id/refresh"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<RelativeLayout
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+    <!--tools:ignore="MergeRootFrame">&ndash;&gt;-->
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/mainload"/>
+    <Button
+        android:id="@+id/btn_menu"
+        android:layout_width="18dp"
+        android:layout_height="12dp"
+        android:layout_marginLeft="16.3dp"
+        android:layout_marginTop="29.3dp"
+        android:background="@drawable/btn_menu_wh" />
+
+    <Button
+        android:id="@+id/recordbtn"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="18sp"
+        android:layout_marginTop="20sp"
+        android:onClick="record"
+        android:background="@drawable/mov_purple" />
+
+    <fr.castorflex.android.verticalviewpager.VerticalViewPager
+        android:id="@+id/verticalviewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    </RelativeLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>

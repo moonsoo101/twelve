@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:orientation="horizontal">
+    <FrameLayout android:layout_width="match_parent"
+        android:id="@+id/frameLayout1"
+        android:layout_height="fill_parent">
+        <com.devbrackets.android.exomedia.ui.widget.EMVideoView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/videoView1"
+            android:layout_gravity="center">
+        </com.devbrackets.android.exomedia.ui.widget.EMVideoView>
+        <ProgressBar
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:id="@+id/loading"
+            android:layout_gravity="center"/>
+        <Button
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_gravity="center"
+            android:id="@+id/play"
+            android:background="@drawable/btn_main_play"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:id="@+id/subtitle"
+            android:textSize="24dip"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:gravity="center">
+        </TextView>
+
+    </FrameLayout>
+</LinearLayout>

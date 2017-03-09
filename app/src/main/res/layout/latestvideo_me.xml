@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="300dip"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="15.8dip">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_marginTop="16.7dip"
+        android:layout_marginBottom="6.6dip"
+        android:gravity="center_vertical"
+        android:id="@+id/inforcontainer">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:id="@+id/profileImage"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="6.6sp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="dsfsdf"
+                android:id="@+id/nickname"
+                android:textColor="#3f3e85"
+                android:textSize="13.4sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="dsfsdf"
+                android:id="@+id/entertainment"
+                android:textColor="#3f3e85"
+                android:layout_marginTop="4.6sp"
+                android:textSize="11.5sp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#525190"
+        android:textSize="14.4sp"
+        android:id="@+id/text"
+        android:text="dasf"
+        android:layout_below="@id/videocontainer"
+        android:layout_marginTop="7.2sp"
+        android:layout_marginLeft="3.4sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#3f3e85"
+        android:textSize="9.6sp"
+        android:id="@+id/gold"
+        android:text="dasf"
+        android:layout_below="@id/videocontainer"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="11.5dip"
+        android:layout_marginRight="14dip"/>
+
+    <FrameLayout
+        android:layout_width="286.1dip"
+        android:layout_height="134.4dip"
+        android:id="@+id/videocontainer"
+        android:layout_below="@+id/inforcontainer"
+        android:layout_alignParentStart="true">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/progress"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/thumb"/>
+        <Button
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:id="@+id/playbtn"
+            android:background="@drawable/btn_main_play"
+            android:layout_gravity="center_vertical|center_horizontal"/>
+    </FrameLayout>
+
+</RelativeLayout>

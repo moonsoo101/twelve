@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <org.florescu.android.rangeseekbar.RangeSeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#282455"
+        android:id="@+id/range"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_above="@+id/range">
+        <com.devbrackets.android.exomedia.ui.widget.EMVideoView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/video"/>
+        <ProgressBar
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:id="@+id/loading"
+            android:layout_gravity="center"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dip"
+            android:background="#E30f0e20"
+            android:layout_gravity="bottom"
+            android:layout_above="@+id/range"
+            android:id="@+id/seqContainer">
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center_horizontal"
+            android:layout_above="@+id/range"
+            android:layout_marginBottom="83.5dip">
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/writesubtitle"
+                android:textSize="19sp"
+                android:layout_marginLeft="50dip"
+                android:textColor="#FFFFFF"
+                android:hint="Write a message"
+                android:textColorHint="#ffffff"
+                android:layout_weight="1"
+                android:layout_marginBottom="20dp"
+                android:selectAllOnFocus="true"
+                android:gravity="center">
+            </EditText>
+            <Button
+                android:layout_width="50dip"
+                android:layout_height="wrap_content"
+                android:id="@+id/send"
+                android:text="전송" />
+            <Button
+                android:layout_width="50dip"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_btn"
+                android:text="수정" />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:id="@+id/test1"/>
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end"
+            android:id="@+id/test2"/>
+
+
+        <Button
+            android:layout_width="55dip"
+            android:layout_height="70dip"
+            android:id="@+id/play"
+            android:background="@drawable/bigplay"
+            android:layout_gravity="center"/>
+        <Button
+            android:layout_width="60dip"
+            android:layout_height="70dip"
+            android:id="@+id/pause"
+            android:background="@drawable/bigpause"
+            android:layout_gravity="center"/>
+        <Button
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:id="@+id/back"
+            android:layout_marginLeft="5.3dip"
+            android:layout_marginTop="15.3dip"
+            android:background="@drawable/icn_delete_pp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:id="@+id/save"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:layout_marginRight="14.5dip"
+            android:layout_marginTop="26.3dip"
+            android:text="완료"/>
+    </FrameLayout>
+    <!-- <org.florescu.android.rangeseekbar.RangeSeekBar
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:id="@+id/range"/>-->
+
+
+
+</RelativeLayout>

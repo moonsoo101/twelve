@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/seqImage"/>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/progress"/>
+    <Button
+        android:layout_width="14dip"
+        android:layout_height="14dip"
+        android:layout_gravity="end"
+        android:layout_marginTop="6dip"
+        android:layout_marginRight="5dip"
+        android:background="@drawable/icn_seq_del"
+        android:id="@+id/deleteseq"/>
+
+</FrameLayout>

@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:id="@+id/mainLayout"
+    android:background="@android:color/white">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/topimg"
+        android:background="@drawable/img2"
+        android:layout_alignParentTop="true">
+    </ImageView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mainScroll"
+        android:layout_below="@+id/topimg"
+        android:layout_above="@+id/bottomimg"
+        android:layout_marginTop="41.8dip"
+        android:layout_marginBottom="27dip"
+        android:layout_centerInParent="true">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:layout_marginRight="40dip"
+    android:layout_marginLeft="43.3dip">
+    <EditText
+        android:id = "@+id/edit_name"
+        android:layout_width = "match_parent"
+        android:layout_height = "42dip"
+        android:singleLine="true"
+        android:background="@null"
+        android:imeOptions="actionDone"
+        android:drawableLeft="@drawable/icn_name_real"
+        android:drawablePadding="@dimen/activity_horizontal_margin"
+        android:hint = "본명을 입력해주세요."
+        android:textColor="#282455"
+        android:textCursorDrawable="@null"
+        android:textColorHint="#bbbad0"
+        android:textSize="12sp"
+        android:selectAllOnFocus="true"/>
+    <TextView
+        android:layout_below="@+id/edit_name"
+        android:layout_width = "match_parent"
+        android:layout_height="1dip"
+        android:background="#d7d7e5"/>
+    <EditText
+        android:id = "@+id/edit_nickname"
+        android:layout_below="@+id/edit_name"
+        android:layout_width = "match_parent"
+        android:layout_height = "42dip"
+        android:layout_marginTop="18.1dip"
+        android:background="@null"
+        android:singleLine="true"
+        android:textCursorDrawable="@null"
+        android:maxLength="12"
+        android:imeOptions="actionDone"
+        android:drawablePadding="@dimen/activity_horizontal_margin"
+        android:drawableLeft="@drawable/icn_name_now"
+        android:hint = "활동하시는 성함을 입력해주세요."
+        android:textColor="#282455"
+        android:textColorHint="#bbbad0"
+        android:textSize="12sp"
+        android:selectAllOnFocus="true"/>
+    <TextView
+        android:layout_below="@+id/edit_nickname"
+        android:layout_width = "match_parent"
+        android:layout_height="1dip"
+        android:background="#d7d7e5" />
+    <LinearLayout
+        android:layout_width = "match_parent"
+        android:layout_height="42dip"
+        android:id="@+id/radiocontainer"
+        android:layout_below="@id/edit_nickname"
+        android:layout_marginTop="18.1dip">
+    <ImageView
+        android:layout_width="13dip"
+        android:layout_height="12.5dip"
+        android:background="@drawable/icn_company"
+        android:layout_gravity="center"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"></ImageView>
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_singer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:textSize="12sp"
+            android:textColor="#282455"
+            android:buttonTint="#6d64de"
+            android:text="가수"/>
+
+        <RadioButton
+            android:id="@+id/radio_actor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#282455"
+            android:buttonTint="#6d64de"
+            android:text="배우" />
+
+        <RadioButton
+            android:id="@+id/radio_announcer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#282455"
+            android:buttonTint="#6d64de"
+            android:text="아나운서" />
+
+        <RadioButton
+            android:id="@+id/radio_etc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#282455"
+            android:textSize="12sp"
+            android:buttonTint="#6d64de"
+            android:text="기타" />
+    </RadioGroup>
+    </LinearLayout>
+    <TextView
+        android:layout_below="@+id/radiocontainer"
+        android:layout_width = "match_parent"
+        android:layout_height="1dip"
+        android:background="#d7d7e5" />
+    <EditText
+        android:id = "@+id/edit_entertainment"
+        android:layout_below="@+id/radiocontainer"
+        android:layout_width = "match_parent"
+        android:layout_height = "42dip"
+        android:layout_marginTop="18.1dip"
+        android:background="@null"
+        android:singleLine="true"
+        android:textCursorDrawable="@null"
+        android:maxLength="12"
+        android:imeOptions="actionDone"
+        android:drawablePadding="@dimen/activity_horizontal_margin"
+        android:drawableLeft="@drawable/icn_company"
+        android:hint = "소속사를 입력해주세요.(소속사 없을 시 공란)"
+        android:textColor="#282455"
+        android:textColorHint="#bbbad0"
+        android:textSize="12sp"
+        android:selectAllOnFocus="true"/>
+    <TextView
+        android:layout_below="@+id/edit_entertainment"
+        android:layout_width = "match_parent"
+        android:layout_height="1dip"
+        android:background="#d7d7e5" />
+    <EditText
+        android:id = "@+id/edit_id"
+        android:layout_below="@+id/edit_entertainment"
+        android:layout_gravity="center"
+        android:layout_width = "match_parent"
+        android:layout_height = "42dip"
+        android:layout_marginTop="18.1dip"
+        android:background="@null"
+        android:textCursorDrawable="@null"
+        android:inputType="textEmailAddress"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:drawableLeft="@drawable/icn_mail_pp"
+        android:drawablePadding="@dimen/activity_horizontal_margin"
+        android:hint = "Email을 입력해주세요"
+        android:textColor="#282455"
+        android:textColorHint="#bbbad0"
+        android:textSize="12sp"
+        android:selectAllOnFocus="true"/>
+    <TextView
+        android:layout_below="@+id/edit_id"
+        android:layout_width = "match_parent"
+        android:layout_height="1dip"
+        android:background="#d7d7e5" />
+    <EditText
+        android:id = "@+id/edit_pass"
+        android:layout_gravity="center"
+        android:layout_below="@+id/edit_id"
+        android:layout_width = "match_parent"
+        android:layout_height = "42dip"
+        android:layout_marginTop="18.1dip"
+        android:textCursorDrawable="@null"
+        android:background="@null"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:maxLength="12"
+        android:imeOptions="actionDone"
+        android:drawablePadding="@dimen/activity_horizontal_margin"
+        android:drawableLeft="@drawable/icn_pw_pp"
+        android:hint = "Password를 입력해주세요"
+        android:textColor="#282455"
+        android:textColorHint="#bbbad0"
+        android:textSize="12sp"
+        android:selectAllOnFocus="true"/>
+    <TextView
+        android:layout_below="@+id/edit_pass"
+        android:layout_width = "match_parent"
+        android:layout_height="1dip"
+        android:background="#d7d7e5" />
+    <EditText
+        android:id = "@+id/edit_repass"
+        android:layout_gravity="center"
+        android:layout_below="@+id/edit_pass"
+        android:layout_width = "match_parent"
+        android:layout_height = "42dip"
+        android:layout_marginTop="18.1dip"
+        android:textCursorDrawable="@null"
+        android:background="@null"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:maxLength="12"
+        android:imeOptions="actionDone"
+        android:drawablePadding="@dimen/activity_horizontal_margin"
+        android:drawableLeft="@drawable/icn_pw_pp"
+        android:hint = "Password를 다시 한 번 더 입력해주세요"
+        android:textColor="#282455"
+        android:textColorHint="#bbbad0"
+        android:textSize="12sp"
+        android:selectAllOnFocus="true"/>
+    <TextView
+        android:layout_below="@+id/edit_repass"
+        android:layout_width = "match_parent"
+        android:layout_height="1dip"
+        android:background="#d7d7e5" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icn_vod_pp"
+            android:id="@+id/vodimg"
+            android:layout_below="@+id/edit_repass"
+            android:layout_marginTop="18.1dip"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text1"
+        android:layout_toRightOf="@+id/vodimg"
+        android:layout_below="@+id/edit_repass"
+        android:layout_marginTop="18.1dip"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:textSize="12sp"
+        android:textColor="#bbbad0"
+        android:text="스타사칭 피해 방지 절차입니다."/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text2"
+        android:layout_toRightOf="@+id/vodimg"
+        android:layout_marginTop="6dip"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/text1"
+        android:text="필수사항>>“골든12 안녕하세요! ~”로 시작하는 셀프 촬영영상을 올려주세요.\n단, 본인을 확인 할 수 있도록 나온 영상이어야 스타 가입이 인정됩니다."
+        android:textSize="7.5sp"
+        android:textColor="#bbbad0"/>
+    <FrameLayout
+        android:layout_width="300dip"
+        android:layout_height="200dip"
+        android:layout_marginTop="11dip"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/text2"
+        android:layout_toRightOf="@+id/vodimg">
+    <TextureView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/video"
+        android:background="@drawable/icn_plus_vod"/>
+        <Button
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_gravity="center"
+            android:id="@+id/playbtn"
+            android:background="@drawable/btn_main_play"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recordVideo"
+            android:background="@drawable/icn_plus_vod"/>
+    </FrameLayout>
+</RelativeLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#837af1"
+        android:id="@+id/bottomimg"
+        android:layout_alignParentBottom="true">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:onClick="Back"
+                android:text="이전"
+                android:background="#837af1"
+                android:textColor="@android:color/white"
+                android:drawableLeft="@drawable/btn_back_active">
+            </Button>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:onClick="Next"
+                android:text="다음"
+                android:background="#837af1"
+                android:textColor="@android:color/white"
+                android:drawableRight="@drawable/btn_next_active">
+            </Button>
+        </RelativeLayout>
+    </RelativeLayout>

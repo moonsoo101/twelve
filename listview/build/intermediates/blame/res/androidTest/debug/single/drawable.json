@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/wisebody/AndroidStudioProjects/twelve/listview/build/intermediates/res/merged/androidTest/debug/drawable/indicator_bg_top.xml",
+        "source": "/Users/wisebody/AndroidStudioProjects/twelve/listview/build/intermediates/bundles/debug/res/drawable/indicator_bg_top.xml"
+    },
+    {
+        "merged": "/Users/wisebody/AndroidStudioProjects/twelve/listview/build/intermediates/res/merged/androidTest/debug/drawable/indicator_bg_bottom.xml",
+        "source": "/Users/wisebody/AndroidStudioProjects/twelve/listview/build/intermediates/bundles/debug/res/drawable/indicator_bg_bottom.xml"
+    }
+]

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="64sp"
+    android:background="#FFFFFF">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="19.8sp"
+            android:textSize="15sp"
+            android:id="@+id/starindex"
+            android:layout_marginLeft="31.8sp"
+            android:layout_gravity="center_vertical"
+            android:textColor="#6d64de"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:id="@+id/starimage"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="23.5sp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="9sp"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/nickname"
+                android:textSize="14sp"
+                android:textColor="#2f2f33" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/entertainment"
+                android:textSize="12sp"
+                android:layout_marginTop="4sp"
+                android:textColor="#2f2f33" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:layout_width="59.3sp"
+        android:layout_height="23.3sp"
+        android:background="@drawable/btn_add_pp_star"
+        android:id="@+id/addStar"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16sp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5sp"
+        android:layout_alignParentBottom="true"
+        android:background="#aaaaaa"
+        android:layout_marginLeft="16sp"/>
+</RelativeLayout>
